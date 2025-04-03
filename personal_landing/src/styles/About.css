@@ -1,8 +1,8 @@
 /* Estilos del About se agregarán paso a paso */
 
 .about {
-  padding: var(--spacing-xl) var(--spacing-md);
-  background-color: var(--background);
+  min-height: 100vh;
+  padding-top: 8rem;
 }
 
 .about h2 {
@@ -13,20 +13,23 @@
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: var(--max-width-xl);
   margin: 0 auto;
-  text-align: center;
-  padding: var(--spacing-md);
+  padding: 2rem;
   background-color: var(--section-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
 }
 
+.about-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  color: var(--color-text);
+}
+
 .about-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-md);
+  font-size: 1.6rem;
+  color: var(--color-text-light);
 }
 
 @media (max-width: 768px) {

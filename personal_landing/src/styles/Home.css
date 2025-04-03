@@ -1,0 +1,22 @@
+.home {
+  min-height: 100vh;
+  padding-top: 8rem;
+}
+
+.hero {
+  max-width: var(--max-width-xl);
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  color: var(--color-text);
+}
+
+.hero p {
+  font-size: 1.6rem;
+  color: var(--color-text-light);
+} 

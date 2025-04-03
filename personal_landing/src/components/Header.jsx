@@ -1,10 +1,13 @@
 import React from 'react';
+import Navbar from './Navbar';
 import '../styles/Header.css';
 
 const Header = () => {
+  const links = ['Home', 'About Me', 'Projects', 'Contact'];
+
   return (
     <header className="header">
-      {/* Contenido del Header se agregará paso a paso */}
+      <Navbar links={links} />
     </header>
   );
 };

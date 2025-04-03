@@ -1,14 +1,27 @@
 .contact {
   background-color: var(--color-background-alt);
+  min-height: 100vh;
+  padding-top: 8rem;
 }
 
 .contact-content {
-  max-width: var(--max-width-lg);
+  max-width: var(--max-width-xl);
   margin: 0 auto;
-  padding: var(--spacing-lg);
+  padding: 2rem;
   background-color: var(--color-background);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
+}
+
+.contact-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  color: var(--color-text);
+}
+
+.contact-content p {
+  font-size: 1.6rem;
+  color: var(--color-text-light);
 }
 
 .contact-form {

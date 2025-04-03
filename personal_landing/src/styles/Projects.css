@@ -1,5 +1,7 @@
 .projects {
   background-color: var(--color-background);
+  min-height: 100vh;
+  padding-top: 8rem;
 }
 
 .projects-grid {
@@ -19,4 +21,21 @@
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.projects-content {
+  max-width: var(--max-width-xl);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.projects-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  color: var(--color-text);
+}
+
+.projects-content p {
+  font-size: 1.6rem;
+  color: var(--color-text-light);
 } 
