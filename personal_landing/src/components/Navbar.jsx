@@ -1,31 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { useTheme } from '../context/ThemeContext';
+import NavLink from './NavLink';
 import '../styles/Navbar.css';
 
 const Navbar = ({ links }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    // Aquí implementaremos el cambio de tema
-  };
-
-  // Cerrar el menú cuando cambia la ruta
-  useEffect(() => {
-    closeMenu();
-  }, [location.pathname]);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <nav className={`navbar ${isDarkMode ? 'dark' : 'light'}`}>
@@ -34,18 +20,15 @@ const Navbar = ({ links }) => {
           LuisCar
         </Link>
 
-        <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-          {links.map((link, index) => (
-            <Link
-              key={index}
+        <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+          {links.map((link) => (
+            <NavLink
+              key={link}
               to={`/${link.toLowerCase().replace(/\s+/g, '-')}`}
-              className={`navbar-link ${
-                location.pathname === `/${link.toLowerCase().replace(/\s+/g, '-')}` ? 'active' : ''
-              }`}
               onClick={closeMenu}
             >
               {link}
-            </Link>
+            </NavLink>
           ))}
           <button className="theme-toggle" onClick={toggleTheme}>
             {isDarkMode ? '☀️' : '🌙'}
@@ -53,7 +36,7 @@ const Navbar = ({ links }) => {
         </div>
 
         <button className="hamburger" onClick={toggleMenu}>
-          {isOpen ? <CloseIcon className="hamburger-icon" /> : <MenuIcon className="hamburger-icon" />}
+          {isMenuOpen ? <CloseIcon className="hamburger-icon" /> : <MenuIcon className="hamburger-icon" />}
         </button>
       </div>
     </nav>
