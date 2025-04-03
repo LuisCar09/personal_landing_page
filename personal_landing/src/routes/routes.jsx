@@ -12,18 +12,16 @@ const RoutesApp = () => {
 
   return (
     <Router>
-      <div className="app">
-        <Navbar links={navLinks} />
-        <main>
-          <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/biography" element={<Biography />} />
-          </Routes>
-        </main>
-      </div>
+      <Navbar links={navLinks} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/biography" element={<Biography />} />
+        </Routes>
+      </main>
     </Router>
   );
 };
