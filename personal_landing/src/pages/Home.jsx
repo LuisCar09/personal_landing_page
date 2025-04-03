@@ -3,12 +3,23 @@ import '../styles/Home.css';
 
 const Home = () => {
   return (
-    <main className="home">
-      <section className="hero">
-        <h1>Bienvenido a mi Portafolio</h1>
-        <p>Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales</p>
-      </section>
-    </main>
+    <section className="hero-section">
+      <div className="hero-content">
+        <div className="profile-container">
+          <img 
+            src="/images/profile.jpg" 
+            alt="Luis Carlos Bravo" 
+            className="profile-image"
+          />
+        </div>
+        <h1>Luis Carlos Bravo</h1>
+        <ul className="roles-list">
+          <li>Software developer</li>
+          <li>Technology enthusiast</li>
+          <li>Cybersecurity Integration</li>
+        </ul>
+      </div>
+    </section>
   );
 };
 
