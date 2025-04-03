@@ -1,0 +1,12 @@
+.about-me {
+  background-color: var(--color-background-alt);
+}
+
+.about-me-content {
+  max-width: var(--max-width-lg);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+} 

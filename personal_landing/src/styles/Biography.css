@@ -1,0 +1,12 @@
+.biography {
+  background-color: var(--color-background);
+}
+
+.biography-content {
+  max-width: var(--max-width-lg);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  background-color: var(--color-background-alt);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+} 

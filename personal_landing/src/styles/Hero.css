@@ -1,11 +1,7 @@
+/* Estilos del Hero se agregarán paso a paso */
+
 .hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-  padding: 0 2rem;
+  /* Estilos del Hero se agregarán más adelante */
 }
 
 .hero-content {
