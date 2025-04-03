@@ -29,7 +29,7 @@
 }
 
 .navbar-logo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--color-primary);
   text-decoration: none;
@@ -67,7 +67,7 @@
   padding: 0.5rem 0;
   position: relative;
   transition: all 0.3s ease;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.3px;
 }
 
@@ -91,7 +91,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding: 0.5rem;
   transition: transform 0.3s ease;
 }
@@ -111,7 +111,7 @@
 
 .hamburger-icon {
   color: var(--color-text);
-  font-size: 2rem;
+  font-size: 2.4rem;
   transition: transform 0.3s ease;
 }
 
