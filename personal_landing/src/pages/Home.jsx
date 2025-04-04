@@ -31,7 +31,7 @@ const Home = () => {
             <ul className="roles-list">
             <li style={{ '--i': 1 }}>
               <FaCode className="role-icon" />
-              Software Developer
+              Full Stack Developer
             </li>
             <li style={{ '--i': 2 }}>
               <FaLaptopCode className="role-icon" />

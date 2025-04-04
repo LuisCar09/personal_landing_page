@@ -1,4 +1,4 @@
-import AppRoutes from './components/Routes';
+import AppRoutes from './routes/Routes';
 import './styles/global.css';
 
 function App() {
