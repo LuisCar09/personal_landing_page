@@ -193,4 +193,9 @@
     padding: 1.5rem;
     margin: 1rem 0;
   }
+}
+
+.navbar button svg {
+  width: 2rem;
+  height: 2rem;
 } 

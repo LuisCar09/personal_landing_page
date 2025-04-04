@@ -59,7 +59,7 @@ const About = () => {
       <div className="content-wrapper">
         <section className="profile-section">
           <div className="profile-image">
-            <img src="./assets/esta.png" alt="Luis Carlos Bravo" />
+            <img src="../../public/fotoprofile.png" alt="Luis Carlos Bravo" />
           </div>
         </section>
 
