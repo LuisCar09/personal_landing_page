@@ -59,7 +59,7 @@ const About = () => {
       <div className="content-wrapper">
         <section className="profile-section">
           <div className="profile-image">
-            <img src="../../public/fotoprofile.png" alt="Luis Carlos Bravo" />
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHgKKZ23R2axw/profile-displayphoto-shrink_800_800/B4DZUk2umsG4Ag-/0/1740080081843?e=1749081600&v=beta&t=VYbdwC1_wpG2ejcXyMjjP0FqS-GPOtBg00Mj6nsAYMQ" alt="Luis Carlos Bravo" />
           </div>
         </section>
 
