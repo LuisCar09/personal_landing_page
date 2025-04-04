@@ -2,11 +2,11 @@
   min-height: 100vh;
   padding: 8rem 0;
   background: 
-    linear-gradient(135deg, #2a3345 0%, #3a4a63 100%),
+    linear-gradient(180deg, #1a1a1a 0%, #2c3e50 100%),
     repeating-linear-gradient(
       45deg,
-      rgba(99, 102, 241, 0.03) 0px,
-      rgba(99, 102, 241, 0.03) 1px,
+      rgba(100, 255, 218, 0.03) 0px,
+      rgba(100, 255, 218, 0.03) 1px,
       transparent 1px,
       transparent 10px
     );
@@ -30,22 +30,22 @@
   background: linear-gradient(
     to bottom,
     transparent,
-    #60a5fa 10%,
-    #60a5fa 90%,
+    #64ffda 10%,
+    #64ffda 90%,
     transparent
   );
   left: 50%;
   transform: translateX(-50%);
   top: 100px;
-  box-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
 }
 
 .title {
   text-align: center;
   font-size: 3.6rem;
   margin-bottom: 6rem;
-  color: #e2e8f0;
-  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+  color: #ccd6f6;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -74,19 +74,19 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #60a5fa;
+  background: #64ffda;
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 20px rgba(96, 165, 250, 0.8);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
   z-index: 2;
   transition: all 0.3s ease;
 }
 
 .portfolio-item-container:hover::before {
   transform: translate(-50%, -50%) scale(1.5);
-  box-shadow: 0 0 30px rgba(96, 165, 250, 1);
+  box-shadow: 0 0 30px rgba(100, 255, 218, 1);
 }
 
 .portfolio-item-container.left {
@@ -101,14 +101,14 @@
 .portfolio-item {
   display: flex;
   gap: 2rem;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(100, 255, 218, 0.05);
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 
     0 0 20px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(99, 102, 241, 0.1);
+    0 0 40px rgba(100, 255, 218, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(100, 255, 218, 0.2);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -143,14 +143,14 @@
 
 .portfolio-item--description h3 {
   font-size: 2.4rem;
-  color: #60a5fa;
+  color: #64ffda;
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
 }
 
 .portfolio-item--description p {
   font-size: 1.6rem;
-  color: #e2e8f0;
+  color: #a8b2d1;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -163,17 +163,17 @@
 }
 
 .tech-tag {
-  background: rgba(96, 165, 250, 0.1);
-  color: #60a5fa;
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: 1.4rem;
-  border: 1px solid rgba(96, 165, 250, 0.2);
+  border: 1px solid rgba(100, 255, 218, 0.2);
   transition: all 0.3s ease;
 }
 
 .tech-tag:hover {
-  background: rgba(96, 165, 250, 0.2);
+  background: rgba(100, 255, 218, 0.2);
   transform: translateY(-2px);
 }
 
@@ -187,19 +187,19 @@
   align-items: center;
   gap: 0.8rem;
   padding: 1rem 2rem;
-  background: rgba(96, 165, 250, 0.1);
-  color: #60a5fa;
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
   border-radius: 0.5rem;
   text-decoration: none;
   font-size: 1.4rem;
   transition: all 0.3s ease;
-  border: 1px solid rgba(96, 165, 250, 0.2);
+  border: 1px solid rgba(100, 255, 218, 0.2);
 }
 
 .project-links a:hover {
-  background: rgba(96, 165, 250, 0.2);
+  background: rgba(100, 255, 218, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
 }
 
 @media (max-width: 1024px) {
