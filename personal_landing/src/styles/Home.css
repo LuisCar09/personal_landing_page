@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 12rem 2rem 2rem 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -198,6 +198,10 @@
 .letter:nth-child(17) { animation-delay: 0.9s; }
 
 @media (max-width: 768px) {
+  .home {
+    padding-top: 8rem;
+  }
+
   .name {
     font-size: 3.5rem;
   }
