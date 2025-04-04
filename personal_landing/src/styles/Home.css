@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  perspective: 1000px;
 }
 
 .hero-section {
@@ -12,7 +13,20 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: 
+    linear-gradient(135deg, #2a3345 0%, #3a4a63 100%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(99, 102, 241, 0.03) 0px,
+      rgba(99, 102, 241, 0.03) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+  background-blend-mode: overlay;
+  transform-style: preserve-3d;
+  animation: pageLoad 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
 }
 
 .hero-section::before {
@@ -58,6 +72,26 @@
   }
 }
 
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+    transform: rotateX(10deg) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -69,6 +103,21 @@
   max-width: var(--max-width-xl);
   padding: 2rem;
   z-index: 2;
+  transform-style: preserve-3d;
+  animation: contentLoad 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+@keyframes contentLoad {
+  0% {
+    opacity: 0;
+    transform: translateZ(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
 .title-container {
@@ -78,6 +127,7 @@
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+  transform-style: preserve-3d;
 }
 
 .name {
@@ -89,6 +139,7 @@
   margin-bottom: 2rem;
   padding: 0;
   text-align: center;
+  transform-style: preserve-3d;
 }
 
 .letter {
@@ -98,10 +149,22 @@
   transform-origin: center;
   position: relative;
   text-shadow: 0 0 15px rgba(96, 165, 250, 0.7);
+  animation: fadeInLetter 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .letter:hover {
-  animation: smoothHurricane 1.5s cubic-bezier(0.45, 0, 0.55, 1) forwards;
   color: #3b82f6;
   text-shadow: 0 0 30px rgba(59, 130, 246, 0.9);
 }
@@ -125,7 +188,7 @@
   color: #e2e8f0;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 0.5s ease forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
   animation-delay: calc(var(--i) * 0.2s);
   transition: all 0.3s ease;
   padding: 1.5rem 2.5rem;
@@ -160,7 +223,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
