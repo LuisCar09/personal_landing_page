@@ -5,18 +5,9 @@
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease;
-}
-
-.navbar.light {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.dark {
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-container {
@@ -105,7 +96,6 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  z-index: 1001;
 }
 
 .hamburger-icon {
